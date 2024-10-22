@@ -55,7 +55,7 @@ jobs:
           kubectl get pods -A
       # Install KubeArmor components
       - name: Install kubearmor components
-        uses: kubearmor/kubearmor-action@main
+        uses: dorkamotorka/kubearmor-action@main
         with:
           install-kubearmor: 'true'
       # Show pods info
@@ -66,7 +66,7 @@ jobs:
         run: kubectl apply -f ./test/testdata/sock-shop.yaml
       # Check all pods are ready, if not, get reason
       - name: Check all pods are ready, if not, get reason
-        uses: kubearmor/kubearmor-action/actions/check-pods-ready@main
+        uses: dorkamotorka/kubearmor-action/actions/check-pods-ready@main
       # Runs Integration/Tests/Load Generation(You can add a step here)
       # Generate load on the new app
       - name: Generate load on the new app
@@ -75,7 +75,7 @@ jobs:
           docker run --net=host weaveworksdemos/load-test -h localhost:30001 -r 100 -c 2
       # Save the new app summary report and Generate visualisation results
       - name: Save the new app summary report and Generate visualisation results
-        uses: kubearmor/kubearmor-action@main
+        uses: dorkamotorka/kubearmor-action@main
         id: visualisation
         with:
           old-summary-path: 'https://raw.githubusercontent.com/kubearmor/kubearmor-action/gh-pages/latest-summary-test.json'
