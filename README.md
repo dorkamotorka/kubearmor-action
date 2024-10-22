@@ -5,6 +5,7 @@ A Github Action component library that visualizes the application's system-level
 ## How To Use
 
 ### Main Action: kubearmor-action
+
 This action will be used to save the new app summary report and choose to generate visualisation results or not
 ```yaml
  # Save the new app summary report and Choose to Generate visualisation results or not
@@ -19,9 +20,13 @@ This action will be used to save the new app summary report and choose to genera
     save-summary-report: 'true' # default value is false, if set true, will save summary report  
     visualise: 'true' # default value is false, if set true, will generate visualisation results
 ```
+
 ### Other Tool Actions
+
 #### Action: install-kubearmor
+
 This action will be used to install kubearmor-client and Discovery-Engine.
+
 ```yaml
 # Install kubearmor components
 - name: Install kubearmor components
