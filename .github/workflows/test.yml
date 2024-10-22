@@ -85,13 +85,13 @@ jobs:
           visualise: 'true'
       # Get the latest summary report file
       - name: Get the latest summary report file
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: ${{ steps.visualisation.outputs.summary-report-artifact }}
           path: summary_reports
       # Get the visualisation results
       - name: Get the visualisation results 
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: ${{ steps.visualisation.outputs.visualisation-results-artifact }}
           path: images
