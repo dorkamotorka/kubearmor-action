@@ -55,11 +55,11 @@ runs:
       - name: Install kubearmor
         if: inputs.install-kubearmor == 'true' # only run this step if install-kubearmor is true
         id: install-kubearmor
-        uses: kubearmor/kubearmor-action/actions/install-kubearmor@main
+        uses: dorkamotorka/kubearmor-action/actions/install-kubearmor@main
       # Save the new app summary report
       - name: Save the new app summary report
         if: inputs.save-summary-report == 'true' # only run this step if save-summary-report is true
-        uses: kubearmor/kubearmor-action/actions/save-summary-report@main
+        uses: dorkamotorka/kubearmor-action/actions/save-summary-report@main
         id: save-summary-report
         with:
           namespace: ${{ inputs.namespace }}
@@ -68,7 +68,7 @@ runs:
       - name: Kubearmor-action visualisation
         if: inputs.save-summary-report == 'true' && inputs.visualise == 'true' # only run this step if visualise is true and save-summary-report is true
         id: visualisation-report
-        uses: kubearmor/kubearmor-action/actions/visual-report@main
+        uses: dorkamotorka/kubearmor-action/actions/visual-report@main
         with:
           old-summary-path: ${{ inputs.old-summary-path }}
           new-summary-path: '${{ github.workspace }}/${{ steps.save-summary-report.outputs.summary-report-file }}'
