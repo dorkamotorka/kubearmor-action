@@ -22,7 +22,7 @@ jobs:
           GO111MODULE: "on"
       # Checkout to your repo
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       # Install k3s cluster(You can setup a k8s cluster here)
       - name: Setup k3s cluster
         run: |
