@@ -29,7 +29,7 @@ runs:
       shell: bash
     - name: Upload summary report
       id: upload-summary-report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: summary_report
         path: |
