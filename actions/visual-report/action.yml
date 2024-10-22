@@ -66,7 +66,7 @@ runs:
       shell: bash
     - name: Upload image
       id: app_visulisation
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: app_visulisation
         path: |
