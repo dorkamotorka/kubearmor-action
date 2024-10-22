@@ -255,7 +255,7 @@ jobs:
     └── utils.go
 ```
 
-## Application Behaviors Visualisation
+## Application Behaviour Visualisation
 ### System Behaviors
 ![Alt text](docs/pics/sys-behaviors.png)
 ### Network Connections
