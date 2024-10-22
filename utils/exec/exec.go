@@ -10,7 +10,7 @@ import (
 	"os/user"
 	"strings"
 
-	"github.com/kubearmor/kubearmor-action/common"
+	"github.com/dorkamotorka/kubearmor-action/common"
 
 	"github.com/sirupsen/logrus"
 )
