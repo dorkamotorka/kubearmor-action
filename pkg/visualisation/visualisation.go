@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dorkamotorka/kubearmor-action/common"
-	"github.com/dorkamotorka/kubearmor-action/utils"
-	exe "github.com/dorkamotorka/kubearmor-action/utils/exec"
-	osi "github.com/dorkamotorka/kubearmor-action/utils/os"
+	"github.com/kubearmor/kubearmor-action/common"
+	"github.com/kubearmor/kubearmor-action/utils"
+	exe "github.com/kubearmor/kubearmor-action/utils/exec"
+	osi "github.com/kubearmor/kubearmor-action/utils/os"
 	"k8s.io/klog"
 )
 
