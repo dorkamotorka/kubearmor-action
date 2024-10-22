@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 
 	visual "github.com/kubearmor/kubearmor-action/pkg/visualisation"
-	"github.com/kubearmor/kubearmor-action/utils"
+	"github.com/dorkamotorka/kubearmor-action/utils"
 	"github.com/spf13/cobra"
 	"k8s.io/klog"
 )
