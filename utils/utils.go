@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/kubearmor/kubearmor-action/utils/urlfile"
+	"github.com/dorkamotorka/kubearmor-action/utils/urlfile"
 )
 
 // Retry retries the given action for the given number of times
